@@ -58,8 +58,17 @@ class Resnet50:
         
 
     def compile(self, **kwargs):
-        self.model.compile(**kwargs)
+        return self.model.compile(**kwargs)
 
+    def fit(self, **kwargs):
+        return self.model.fit(**kwargs)
+    
+    def predict(self, **kwargs):
+        return self.model.predict(**kwargs)
+
+    def evaluate(self, **kwargs):
+        return self.model.evaluate(**kwargs)
+    
 
     def identity_block(self, X, f, filters):
         """
