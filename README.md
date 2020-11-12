@@ -2,6 +2,7 @@
 
 - [Implementation of Resnet50 architecture](#implementation-of-resnet50-architecture)
   - [Architecure](#architecure)
+  - [Training test](#training-test)
   - [Usage](#usage)
 
 
@@ -20,6 +21,13 @@ The model is built using this architecture provided in aforementioned paper:
 ![Architecure](scheme.jpg)
 
 </br>
+
+## Training test
+
+I tried to train the model on [patch_camelyon](https://www.tensorflow.org/datasets/catalog/patch_camelyon), results can be found in [this notebook](training_model.ipynb)
+
+However model overfitted the dataset hard. Most likely this architecture is too complex and fits the data too well. This may be countered with intruducing image augmentation or just using smaller model.
+Overall, however, this network model learns pretty well. It won ImageNet competition after all.
 
 ## Usage
 </br>
